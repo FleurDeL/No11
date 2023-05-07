@@ -1,4 +1,4 @@
-mtc = 153
+mtc = 789
 
 hours = int(mtc/60)
 #int는 정수
