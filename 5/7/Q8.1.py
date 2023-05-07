@@ -8,7 +8,7 @@ W = w.lower(); P = p.lower()
 print(W+i,P+i)
 
     #or
-QEQWEQ
+
 A = a.lower()
 work = A.find('work')
 play = A.find('sleep')
