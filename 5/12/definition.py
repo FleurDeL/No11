@@ -17,3 +17,5 @@ def add_sub(n1, n2):
     sub = n1 - n2
     return (add, sub)
 print(add_sub(3, 4))
+머리 = 1; 어깨 = 2; 무릎 =3
+print(func_3(머리,어깨,무릎))

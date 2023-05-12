@@ -11,3 +11,5 @@ def guessed_card(number, suit, bet):
     return (10*bet,guessed)
 
 print(guessed_card(8, 'hearts', 10))
+
+#1. 출력 없음 2. Hector is eating 3. Hector is eating 8 bananas 4.

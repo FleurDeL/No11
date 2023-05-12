@@ -7,7 +7,7 @@ print('1*3' in a) # False => 문자열이기 때문에 연산 불가
 
 # count() => 부분 문자열이 전체 문자열에서 몇 번이나 사용했는지 빈도를 출력
 #부분 문자열이 서로 겹치는 경우는 처리 불가
-fruit = 'banana'
+fruit = 'ban'
 print(fruit.count('ana')) # ana는 총 2개있지만 겹치기 떄문에 1이라는 결과
 
 # replace() => 부분 문자열 바꾸기
