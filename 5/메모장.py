@@ -1,19 +1,17 @@
-n = int(input())
-overlay = []
-for _ in range(n):
-    s = input()
-    overlay = []
-    for i in range(len(s)):
-        a = list(s)
-        for j in range(len(a) - 1):
-            if len(a) == 1: break
-            one = a[j]
-            two = a[j + 1]
-            if one not in overlay and two not in overlay:
-                if one != two:
-                    overlay.append(one)
-            else:
-                n -= 1
-                break
-        break
-print(n)
+def d(i):
+    if i < 10:
+        return i*2
+    elif 10 <= i and i < 100:
+        return i + i//10 + i%10
+    elif 100 <= i and i < 1000:
+        return i + i//100 + (i%100)//10 + (i%100)%10
+    elif 1000 <= i and i < 10000:
+        return i + i//1000 + (i%1000)//100 + (i%1000)%100//10 + ((i%1000)%100)%10  #1221
+T = [i for i in range(1,10001)]
+
+for i in range(1,100):
+    while i < 10000:
+        if d(i) in T:
+            T.remove(d(i))
+        i = d(i)
+for i in range(len(T)): print(T[i])
